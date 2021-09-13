@@ -1,12 +1,16 @@
-function mF() {
-
-    let result = 0;
-    for (const iterator of arr) {;
-
-        result += (Math.pow(arr[iterator], 2));
+function mF(x) {
 
 
+    let resultConjunction = 1;
+    let resultAdd = 0;
+    for (i = 0; i < x.length; i++) {
+
+        resultConjunction = resultConjunction * x[i];
+
+        resultAdd = resultAdd + x[i];
     }
-    console.log(result);
-}
-mF(arr = [0, 1, 2, 3, 4, 5]);
+    console.log('Iloczyn wynosi: ' +
+        resultConjunction + ' a suma: ' + resultAdd);
+};
+
+mF([1, 2, 3, 4, 5, 6]);
